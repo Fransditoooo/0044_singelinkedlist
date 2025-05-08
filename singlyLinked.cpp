@@ -145,6 +145,16 @@ int main()
                     << "List Kosong" << endl;
                 break;
             }
+            cout << "\nMasukkan no mahasiswa yang akan dihapus : ";
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                cout << endl
+                    << "Data tidak ditemukan" << endl;
+            else
+                cout << endl
+                    << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
+        }
+
 
 
 

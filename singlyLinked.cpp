@@ -168,6 +168,22 @@ int main()
                 cout << "\nList Kosong\n";
                 break;
             }
+            Node *previous, *current;
+            cout << endl
+                <<"\nMasukkan no mahasiswa yang dicari : ";
+            cin >> nim;
+            if (mhs.Search(nim, &previous, &current) == false)
+                cout << endl
+                    << "Data tidak ditemukan" << endl;
+            else
+            {
+                cout << endl
+                    << "Data ditemukan" << endl;
+                cout << "\nNo Mhs: " << current->noMhs << endl;
+                cout << "\n";
+            }
+        }
+
 
 
 

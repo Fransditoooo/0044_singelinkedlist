@@ -11,6 +11,12 @@ public:
 
 class LinkedList
 {
-    Node *STAR;
-    
-}
+    Node* START;
+
+public:
+    LinkedList()
+    {
+        START = NULL;
+    }
+
+    void addNode()
